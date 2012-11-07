@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+
+${1:server}.respondWith("${2:GET}", "$3",
+                                [${4:200}, { "Content-Type": ${5:"application/json}" },
+                                 JSON.stringify(${6:sResponse})
+                                ]);
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>serv</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
